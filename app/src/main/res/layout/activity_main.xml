@@ -3,9 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorPressedHighlight"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_division"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:text="DIVISION"
+        android:textColor="#040303"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addition"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <Button
+        android:id="@+id/btn_multiplication"
+        android:layout_width="168dp"
+        android:layout_height="48dp"
+        android:text="MULTIPLICATION"
+        android:textColor="#171616"
+        app:backgroundTint="#84E91E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addition"
+        app:layout_constraintVertical_bias="0.304" />
 
     <EditText
         android:id="@+id/num_input1"
@@ -38,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First:"
-        android:textColor="#000000"
+        android:textColor="#03A9F4"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/num_input1"
@@ -52,7 +79,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:text="Second:"
-        android:textColor="#000000"
+        android:textColor="#03A9F4"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/num_input2"
@@ -63,9 +90,11 @@
 
     <Button
         android:id="@+id/btn_addition"
-        android:layout_width="138dp"
-        android:layout_height="46dp"
+        android:layout_width="159dp"
+        android:layout_height="47dp"
         android:text="Addition"
+        android:textColor="#1B1717"
+        app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -75,9 +104,11 @@
 
     <Button
         android:id="@+id/btn_subtraction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="167dp"
+        android:layout_height="46dp"
         android:text="Subtraction"
+        android:textColor="#070707"
+        app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -95,6 +126,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintVertical_bias="0.814" />
+
+    <Button
+        android:id="@+id/id_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_answer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
